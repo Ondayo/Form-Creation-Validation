@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("registration - form");
-  const feedbackDiv = document.getElementById("form - feedback");
+  const form = document.getElementById("registration-form");
+  const feedbackDiv = document.getElementById("form-feedback");
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -31,11 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (isValid) {
       feedbackDiv.textContent = "Registration Successful!";
       feedbackDiv.style.color = "#28a745";
-
     } else {
       feedbackDiv.innerHTML = messages.join("<br>");
       feedbackDiv.style.color = "#dc3545";
     }
-
   });
 });
